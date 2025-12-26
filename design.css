@@ -1,0 +1,83 @@
+nav {
+    background-color: pink;
+    margin: 100;
+    padding: 1000 px;
+    float: left;
+}
+
+nav a:hover{
+    background-color: aqua;
+}
+
+h1 {
+    font-size: 50px;
+    color: brown;
+    text-align: center;
+    background-color: rgb(238, 185, 247);
+}
+body {
+    /* Set background color directly on body */
+    background-color: rgb(170, 223, 223);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+}
+ 
+body::before {
+    content: "";
+    background-image: url('images/images/images.jpg');
+    background-size: cover;
+    background-position: center; 
+    
+    /* Control transparency here */
+    opacity: 0.3; 
+    
+    /* Cover the entire background area */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Move behind all body content */
+    z-index: -1;
+}
+
+p{
+    font-size: 20px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
+.title-box{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.title{
+    background-color: rgb(70, 151, 222);
+    color: white;
+    padding: 40px;
+    margin: 0;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 0%;
+    transform: none;
+    width: 80px;
+    z-index: 2;
+}
+.logo{
+    width: 20px;
+    height: 50px;
+}
